@@ -11,3 +11,82 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.chatbot-container{
+  /* background-color: aqua; */
+  color: white;
+  border-radius: 12px;
+  height: 34rem;
+  width: 25rem;
+  margin: 5rem auto;
+
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.chatbot-nav{
+  background-color: #575757;
+  width: 100%;
+  height: 4rem;
+  border-radius: 12px 12px 0 0;
+  box-shadow: rgba(255, 255, 255, 0.17) 0px -23px 25px 0px inset, rgba(255, 255, 255, 0.15) 0px -36px 30px 0px inset, rgba(255, 255, 255, 0.1) 0px -79px 40px 0px inset, rgba(255, 255, 255, 0.06) 0px 2px 1px, rgba(255, 255, 255, 0.09) 0px 4px 2px, rgba(255, 255, 255, 0.09) 0px 8px 4px, rgba(255, 255, 255, 0.09) 0px 16px 8px, rgba(255, 255, 255, 0.09) 0px 32px 16px;
+}
+
+/* bot-convo  */
+.chatbot-conv{
+  /* background-color: blueviolet; */
+  width: 90%;
+  height: 24rem;
+  margin: 1rem auto;
+}
+
+.bot-content-wrapper{
+  margin: 0 0 0.5rem 0;
+}
+
+.bot-content-alert{
+  border-radius: 12px 12px 0 12px;
+  /* background-color: red; */
+  border: #727272 1px solid;
+  color: black;
+  width: fit-content; 
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.bot-response-alert{
+  border-radius: 12px 12px 12px 0;
+  /* background-color: red; */
+  border: #727272 1px solid;
+  color: whitesmoke;
+  background-color: black;
+  width: fit-content; 
+  display: inline-block;
+  padding: 0.5rem;
+  
+}
+
+.chatbot-input{
+  /* background-color: #191919; */
+  width: 90%;
+  height: 3.5rem;
+  margin: 0 auto;
+  
+}
+
+
+.bot-input{
+  border-radius: 30px;
+}
+.bot-submit{
+  border-radius: 30px;
+  margin: 0 0 0 0.5rem;
+  padding: 0.31rem 1.3rem;
+}
+
+
+
+.bot-avatar{
+  border-radius: 50%;
+  margin: 5px 10px 0 5px;
+}
