@@ -1,11 +1,16 @@
 import React, { useState } from 'react'
-import avatar from './assets/avatar.jpg'
+import avatar from './assets/newchatbot.png'
 import avatar2 from './assets/avatar5.png'
 import axios from 'axios';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 const Chatbot = () => {
+    AOS.init();
+
     const [input, setInput] = useState('')
     const [convo, setConvo] = useState([])
 
@@ -56,17 +61,17 @@ const Chatbot = () => {
 
     return (
         <>
-            <div className='chatbot-container'>
+            <div data-aos="fade-up" className='chatbot-container'>
 
                 <div className='chatbot-nav' >
                     <img className='bot-avatar' style={{ display: 'inline-block' }} width={50} src={avatar} alt=">" />
                     <h3 style={{ display: 'inline-block' }} >Love</h3>
                 </div>
 
-                <div className='chatbot-conv'>
+                <div id='scroll' className='chatbot-conv'>
                     <div className='bot-content-wrapper'>
                         <img className='bot-avatar' width={30} src={avatar} alt=">" />
-                        <div className='bot-response-alert'>Hi user, how are you doing</div>
+                        <div className='bot-response-alert'>Hi there, how are you doing</div>
                     </div>
                     {
                         convo.map((entry) => {
@@ -93,7 +98,7 @@ const Chatbot = () => {
                 <div className='chatbot-input'>
                     <input style={{ width: '75%', display: 'inline-block' }} onChange={HandleOnChange} type='text' className='form-control bot-input' />
                     <button className='btn btn-dark bot-submit' style={{ display: 'inline-block' }} onClick={HandleRequest}>Send</button>
-                    <button onClick={HandleClearConvo}>clear</button>
+                    {/* <button onClick={HandleClearConvo}>clear</button> */}
                 </div>
 
             </div>

@@ -18,6 +18,11 @@ code {
   right: 30px;
 }
 
+.chatbot-popper-btn{
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;  
+}
+
 .chatbot-container{
   /* transition: all 3s; */
   /* background-color: aqua; */
@@ -48,6 +53,20 @@ code {
   width: 90%;
   height: 24rem;
   margin: 1rem auto;
+  overflow: scroll;
+}
+
+#scroll::-webkit-scrollbar{
+  border-radius: 10px;
+  width: 10px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+#scroll::-webkit-scrollbar-thumb{
+border-radius: 10px;
+width: 10px;
+box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+background-color: #808080;
 }
 
 .bot-content-wrapper{
@@ -101,4 +120,44 @@ code {
 .bot-avatar{
   border-radius: 50%;
   margin: 5px 10px 0 5px;
+}
+
+
+/* HOMEEEE STYLES FOR THIS PROJECT ONLY */
+
+.about-chatbot{
+  width: 80%;
+  margin: 4rem auto;
+  
+}
+
+.about-chatbot p{
+  font-size: 1.5rem;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.about-img{
+  width: 45rem;
+  position: absolute;
+  right: 25%;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.homeh1{
+  font-size: 84px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+.about-chatbot h4{
+  font-size: 32px;
+}
+
+.about-btn{
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;  
+  border: none;
+  color: white;
 }
