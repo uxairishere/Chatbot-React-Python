@@ -12,13 +12,23 @@ code {
     monospace;
 }
 
+.chatbot-model{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
 .chatbot-container{
+  /* transition: all 3s; */
   /* background-color: aqua; */
   color: white;
   border-radius: 12px;
   height: 34rem;
   width: 25rem;
-  margin: 5rem auto;
+  /* margin: 5rem auto; */
+  position: fixed;
+  bottom: 7rem;
+  right: 2rem;
 
   /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -42,6 +52,7 @@ code {
 
 .bot-content-wrapper{
   margin: 0 0 0.5rem 0;
+  max-width: 100%;
 }
 
 .bot-content-alert{
@@ -49,7 +60,8 @@ code {
   /* background-color: red; */
   border: #727272 1px solid;
   color: black;
-  width: fit-content; 
+  max-width: 100%; 
+  
   display: inline-block;
   padding: 0.5rem;
 }
@@ -60,7 +72,7 @@ code {
   border: #727272 1px solid;
   color: whitesmoke;
   background-color: black;
-  width: fit-content; 
+  max-width: 100%;  
   display: inline-block;
   padding: 0.5rem;
   
